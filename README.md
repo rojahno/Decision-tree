@@ -11,7 +11,7 @@
 
 import numpy as np 
 import pandas as pd 
-import decision_tree as dt  # <-- Your implementation
+import decision_tree as dt
 ```
 
 ## First Dataset
@@ -178,7 +178,7 @@ X = data_1.drop(columns=['Play Tennis'])
 y = data_1['Play Tennis']
 
 # Create and fit a Decrision Tree classifier
-model_1 = dt.DecisionTree()  # <-- Should work with default constructor
+model_1 = dt.DecisionTree()
 model_1.fit(X,y)
 
 # Verify that it perfectly fits the training set
@@ -383,7 +383,7 @@ data_2.Split.value_counts()
 
 ```python
 # Fit model
-model_2 = dt.DecisionTree()  # <-- Feel free to add hyperparameters 
+model_2 = dt.DecisionTree()
 model_2.fit(X_train, y_train)
 print(f'Train: {dt.accuracy(y_train, model_2.predict(X_train)) * 100 :.1f}%')
 print(f'Valid: {dt.accuracy(y_valid, model_2.predict(X_valid)) * 100 :.1f}%')
